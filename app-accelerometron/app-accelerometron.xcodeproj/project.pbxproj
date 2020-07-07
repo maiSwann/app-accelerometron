@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		1A4B265524B4BD54005C0311 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4B265424B4BD54005C0311 /* AppDelegate.swift */; };
 		1A4B265724B4BD54005C0311 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4B265624B4BD54005C0311 /* SceneDelegate.swift */; };
-		1A4B265924B4BD54005C0311 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4B265824B4BD54005C0311 /* ViewController.swift */; };
+		1A4B265924B4BD54005C0311 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4B265824B4BD54005C0311 /* ListTableViewController.swift */; };
 		1A4B265C24B4BD54005C0311 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A4B265A24B4BD54005C0311 /* Main.storyboard */; };
 		1A4B265E24B4BD56005C0311 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A4B265D24B4BD56005C0311 /* Assets.xcassets */; };
 		1A4B266124B4BD56005C0311 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A4B265F24B4BD56005C0311 /* LaunchScreen.storyboard */; };
+		1A4B266B24B4C1DC005C0311 /* ParallaxCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4B266A24B4C1DC005C0311 /* ParallaxCell.swift */; };
+		1A4B266D24B4C58D005C0311 /* Images+Names.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4B266C24B4C58D005C0311 /* Images+Names.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1A4B265124B4BD54005C0311 /* app-accelerometron.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "app-accelerometron.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A4B265424B4BD54005C0311 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A4B265624B4BD54005C0311 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1A4B265824B4BD54005C0311 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1A4B265824B4BD54005C0311 /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		1A4B265B24B4BD54005C0311 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1A4B265D24B4BD56005C0311 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A4B266024B4BD56005C0311 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A4B266224B4BD56005C0311 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A4B266A24B4C1DC005C0311 /* ParallaxCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxCell.swift; sourceTree = "<group>"; };
+		1A4B266C24B4C58D005C0311 /* Images+Names.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Images+Names.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,33 @@
 		1A4B265324B4BD54005C0311 /* app-accelerometron */ = {
 			isa = PBXGroup;
 			children = (
+				1A4B266924B4C1BC005C0311 /* View */,
+				1A4B266824B4C1B1005C0311 /* Controller */,
 				1A4B265424B4BD54005C0311 /* AppDelegate.swift */,
 				1A4B265624B4BD54005C0311 /* SceneDelegate.swift */,
-				1A4B265824B4BD54005C0311 /* ViewController.swift */,
 				1A4B265A24B4BD54005C0311 /* Main.storyboard */,
 				1A4B265D24B4BD56005C0311 /* Assets.xcassets */,
 				1A4B265F24B4BD56005C0311 /* LaunchScreen.storyboard */,
 				1A4B266224B4BD56005C0311 /* Info.plist */,
+				1A4B266C24B4C58D005C0311 /* Images+Names.swift */,
 			);
 			path = "app-accelerometron";
+			sourceTree = "<group>";
+		};
+		1A4B266824B4C1B1005C0311 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1A4B265824B4BD54005C0311 /* ListTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1A4B266924B4C1BC005C0311 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1A4B266A24B4C1DC005C0311 /* ParallaxCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +160,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A4B265924B4BD54005C0311 /* ViewController.swift in Sources */,
+				1A4B265924B4BD54005C0311 /* ListTableViewController.swift in Sources */,
 				1A4B265524B4BD54005C0311 /* AppDelegate.swift in Sources */,
+				1A4B266B24B4C1DC005C0311 /* ParallaxCell.swift in Sources */,
+				1A4B266D24B4C58D005C0311 /* Images+Names.swift in Sources */,
 				1A4B265724B4BD54005C0311 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
