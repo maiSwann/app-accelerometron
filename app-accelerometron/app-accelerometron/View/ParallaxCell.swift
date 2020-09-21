@@ -40,5 +40,4 @@ class ParallaxCell: UITableViewCell {
         
         itemImageView.addMotionEffect(motionEffectGroup)
     }
-
 }
